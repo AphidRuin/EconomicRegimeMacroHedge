@@ -13,4 +13,8 @@ Hedged portfolio by minimising maximum drawdown vs. S&P 500
 
 Performance Metrics: {'Sortino Ratio': -1.185, 'Maximum Drawdown': 0.177}
 
-Caveat: I forgot to adjust Gold and US 10Y Bond prices according to US Spot Rate Index data. Might obtain more accurate results upon discounting.
+Caveat: 
+- Train-test split not performed, hence results are overfitted.
+- Could use rate of change of GDP & CPI instead of the indices themselves.
+- Economic regimes are defined arbitarily (GDP = 2.0, CPI = 2.0) when mean/median could be used.
+- Maximum drawdown are calculated every three months, hence might not be accurate when encountering black-swan events.
